@@ -1,0 +1,155 @@
+General:
+reloadUI
+
+/console reloadui
+
+
+coordPrint
+
+/run local s,id,c,x,y=function()print("No")end,C_Map.GetBestMapForUnit("player")if not id then s()return end c=C_Map.GetPlayerMapPosition(id,"player")if not c then s()return end x,y=c:GetXY()print(string.format("%s:%.2f,%.2f",GetZoneText(),x*100,y*100))
+
+
+Mage:
+
+food
+
+#showtooltip
+/use [mod:ctrl] Conjure Refreshment; Conjured Mana Bun
+
+
+freeze
+
+#showtooltip
+/use [@cursor,pet:Water Elemental,mod:altctrl] [@self,pet:Water Elemental,mod:altctrl] Freeze; [@target,mod:ctrl][mod:ctrl] Ice Nova; Frost Nova
+
+counterspell
+
+# #showtooltip
+# /use [@mouseover,harm,nodead][] Counterspell
+# /target [@mouseover,harm,nodead] mouseover
+# /cast counterspell
+# /p counterspelled %t
+# /targetlasttarget
+
+#showtooltip
+/target [@mouseover,harm,nodead] 
+/cast counterspell
+/s counterspelled %t
+/targetlasttarget
+
+Druid:
+# maybe target should go before mouseover for druid heal macros?
+
+B-Rez
+#showtooltip Rebirth
+ /cast [@mouseover, help,dead][help,dead] Rebirth
+
+Tranquility
+#showtooltip Tranquility
+/cast Barkskin
+/cast Tranquility
+
+Decurse
+#showtooltip Nature's Cure
+/use [@mouseover,help,nodead][help,nodead] Nature's Cure
+
+Regrowth
+# #showtooltip Regrowth
+# /cast [@mouseover,help,nodead][@target,help,nodead][@player] Regrowth
+
+#showtooltip Regrowth
+/use [@target,help,nodead][@mouseover,help,nodead] [@player] Regrowth
+
+
+Rejuv
+#showtooltip
+/use [@mouseover,help,nodead][@target,help,nodead] [@player] Rejuvenation
+
+Lifebloom
+#showtooltip Lifebloom
+/use [@mouseover,help,nodead][@target,help,nodead] [@player] Lifebloom
+
+Wild Growth
+#showtooltip Wild Growth
+/cast [@target,help,nodead] [@mouseover,help,nodead][@player] Wild Growth
+
+Priest:
+
+Renew
+#showtooltip
+/use [@mouseover,help,nodead][@target,help,nodead] [@player] Renew
+
+Holy75Talents
+#showtooltip
+/use [@mouseover,talent:5/2, spec:2,help,nodead][@target,talent:5/2,spec:2,help,nodead][] Binding Heal; [@mouseover,talent:5/3, spec:2,help,nodead][@target,talent:5/3,spec:2,help,nodead][@self] Circle of Healing
+# need the [] so it shows the tooltip w/o targeting  / mousing over a valid target
+
+# #showtooltip
+# /use [@mouseover,talent:5/2, spec:2,help,nodead][@target,talent:5/2,spec:2,help,nodead] Binding Heal
+
+# #showtooltip
+# /use [@mouseover,talent:5/2, spec:2,help,nodead][@target,talent:5/2,spec:2,help,nodead] Binding Heal
+
+# #showtooltip
+# /use [@mouseover,talent:5/2, spec:2,help,nodead][@target,talent:5/2,spec:2,help,nodead] Binding Heal; [@mouseover,talent:5/3, spec:2,help,nodead][@target,talent:5/3,spec:2,help,nodead] Circle of Healing
+
+Dispel
+#showtooltip
+#showtooltip
+/use [@mouseover,harm][@target,harm] Dispel Magic; [@mouseover,help,nodead][@target,help,nodead][@player] Purify 
+# dispels either an enemy target with a buff or an ally with a debuff
+
+Holy Words
+#showtooltip
+/use [@focus,mod:altctrl][@target,mod:altctrl] Holy Word: Chastise; [@mouseover,help,nodead][@target,help,nodead] Holy Word: Serenity
+
+ #showtooltip
+/use [@focus,mod:altctrl][@target,mod:altctrl] Holy Word: Chastise; [@cursor,mod:ctrl] Holy Word: Sanctify; [@mouseover,nodead][@target,help,nodead] Holy Word: Serenity
+
+Flash Heal
+/use [@mouseover,nodead,help][@target,help,nodead][@player] Flash Heal
+
+Heal
+#showtooltip
+/use [@mouseover,help][@target][@player] Heal
+
+Prayer of Mending
+#showtooltip
+/use [@mouseover,help,nodead][@target,help,nodead][@player] Prayer of Mending
+
+Shining Force
+#showtooltip
+/use [@mouseover,help][@target,help][@targettarget,harm][@player] Shining Force
+
+Smite
+#showtooltip
+/use [harm][@targettarget,help] Smite
+
+Prayer of Healin
+#showtooltip
+/use [@mouseover,help][@target,help][@targettarget,harm][@player] Prayer of Healing
+
+
+
+Warrior:
+
+Interupts
+#showtooltip
+/use [mod:ctrlalt] Shockwave; [mod:ctrl] Storm Bolt; [] Pummel
+
+Mitigation
+#showtooltip
+/use [mod:ctrlalt] Ignore Pain; [mod:ctrl] Spell Reflection; [] Shield Block
+
+Cooldowns
+#showtooltip
+/use [mod:ctrlalt] Shield Wall; [mod:ctrl] Rallying Cry; [] Last Stand
+
+
+
+
+
+
+
+
+
