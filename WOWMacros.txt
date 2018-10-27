@@ -95,8 +95,7 @@ Holy75Talents
 
 Dispel
 #showtooltip
-#showtooltip
-/use [@mouseover,harm][@target,harm] Dispel Magic; [@mouseover,help,nodead][@target,help,nodead][@player] Purify 
+/use [@mouseover,help,nodead] Purify; [@mouseover,harm] Dispel Magic; [@target,harm] Dispel Magic; [@target,help,nodead][@player] Purify
 # dispels either an enemy target with a buff or an ally with a debuff
 
 Holy Words
@@ -123,7 +122,7 @@ Shining Force
 
 Smite
 #showtooltip
-/use [harm][@targettarget,help] Smite
+/use [harm][@targettarget,help][] Smite
 
 Prayer of Healin
 #showtooltip
@@ -136,6 +135,21 @@ Shield
 Penance
 #showtooltip
 /use [@mouseover,harm][@mouseover,help][@target,harm][@target,help][] Penance
+
+Shadow Mend
+#showtooltip
+/use [@mouseover,help][@target,help][] Shadow Mend
+
+Purge
+#showtooltip
+/use [@mouseover,harm][@target] Purge the Wicked
+
+
+Schism
+#showtooltip
+/use [@mouseover,harm][@target,harm][@targettarget,help] Schism
+
+
 
 Warrior:
 
@@ -156,6 +170,46 @@ Cooldowns
 
 
 
+
+
+
+
+
+Shaman:
+
+Riptide
+#showtooltip
+/use [@mouseover,help][@target,help][@player] Riptide
+
+Heal
+#showtooltip
+/use [@mouseover,help,mod:altctrl][@target,help,mod:altctrl][@player,help,mod:altctrl] Chain Heal; [@mouseover,help,mod:ctrl][@target,help,mod:ctrl][@player,mod:ctrl] Healing Surge; [@mouseover,help][@target,help][] Healing Wave
+	
+
+Shield
+#showtooltip
+/use [@mouseover,help][@target] Earth Shield
+
+Healing Rain
+#showtooltip
+/use [@cursor] Healing Rain
+
+Unleash Life
+#showtooltip Unleash Life
+/use [@mouseover,help,nodead][@target,help,nodead] Unleash Life
+
+Interupt
+#showtooltip
+/use [@cursor,mod:ctrl]  [@mouseover,harm][@target,harm][@focus,harm] Wind Shear
+#leaving in the conditional bc it doesnt change the function and reminds me id like to find another interupt to use also.
+
+Totems
+#showtooltip
+/use [@cursor,mod:altctrl] Tremor Totem; [@cursor, mod:ctrl] Earthbind Totem; [@cursor] Capacitor Totem
+
+Dispel
+#showtooltip
+/use [@mouseover,help,nodead][@target,help,nodead] Purify Spirit
 
 
 
