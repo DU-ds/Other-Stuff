@@ -129,7 +129,13 @@ Prayer of Healin
 #showtooltip
 /use [@mouseover,help][@target,help][@targettarget,harm][@player] Prayer of Healing
 
+Shield
+#showtooltip
+/use [@mouseover,help][@target,help][] Power Word: Shield
 
+Penance
+#showtooltip
+/use [@mouseover,harm][@mouseover,help][@target,harm][@target,help][] Penance
 
 Warrior:
 
