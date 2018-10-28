@@ -73,6 +73,28 @@ Wild Growth
 #showtooltip Wild Growth
 /cast [@target,help,nodead] [@mouseover,help,nodead][@player] Wild Growth
 
+AOE
+#showtooltip
+
+/cast [mod:ctrl] Barkskin
+/cast [mod:ctrl] Tranquility
+/cast [@cursor] Efflorescence
+
+Tough Skin
+#showtooltip
+/use [mod:ctrl] Barkskin
+/use [@mouseover,help,nodead][@target,help,nodead][@player] Ironbark
+
+CC
+#showtooltip
+/use [@mouseover,mod:altctrl][@target,mod:altctrl] Hibernate; [@mouseover,harm,mod:ctrl][@target, mod:ctrl] Entangling Roots; [@mouseover,harm][@target,harm][] Mighty Bash
+
+
+
+
+
+
+
 Priest:
 
 Renew
@@ -210,6 +232,32 @@ Totems
 Dispel
 #showtooltip
 /use [@mouseover,help,nodead][@target,help,nodead] Purify Spirit
+
+
+
+DK:
+AOE
+#showtooltip
+/use [@cursor,mod:ctrl] Death and Decay; [] Blood Boil
+
+Heal
+#showtooltip
+/use [mod:altctrl]      [mod:ctrl] Blooddrinker; [] Death Strike
+
+Grip
+#showtooltip
+/use [mod:ctrl] Gorefiend's Grasp; [] Death Grip
+
+
+CC
+#showtooltip
+/use [@mouseover,harm][@target] Asphyxiate
+
+
+
+
+
+
 
 
 
