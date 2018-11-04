@@ -253,10 +253,61 @@ CC
 #showtooltip
 /use [@mouseover,harm][@target] Asphyxiate
 
+grip/interupt
+#showtooltip
+/use [@mouseover,mod:ctrl,harm][@target,harm,mod:ctrl] Death Grip; [@mouseover,harm][] Mind Freeze
 
 
+Paladin
+
+Heal Cooldowns
+#showtooltip
+/use [@mouseover,mod:altctrl][@target,mod:altctrl] Blessing of Protection; [@mouseover,mod:ctrl][@target,mod:ctrl] Divine Shield; [@mouseover][@target][] Lay on Hands
+
+Heal
+#showtooltip
+/use [@mouseover,mod:altctrl][@target,mod:altctrl] Holy Shock; [@mouseover,mod:ctrl][@target,mod:ctrl] Flash of Light; [@mouseover][] Holy Light
+
+R1Talents
+#showtooltip
+/use [@mouseover,talent:1/2][help,talent:1/2] Bestow Faith; [@mouseover,talent:1/3][help,talent:1/3] Light's Hammer
+
+Heal Dispel
+#showtooltip
+/use [@mouseover][@target][] Cleanse
+
+Heal Interupt
+#showtooltip
+/use [@mouseover][] Hammer of Justice
+
+Tank Interupts
+#showtooltip
+/use [@mouseover,mod:altctrl][mod:altctrl] Repentance; [@mouseover,mod:ctrl][mod:ctrl] Hammer of Justice; [@mouseover][] Rebuke
+
+Tank Cooldowns
+#showtooltip
+/use [mod:altctrl] Lay on Hands; [mod:ctrl] Divine Shield; [] Ardent Defender
+
+Tank Dispel
+#showtooltip
+/use [@mouseover][@target][] Cleanse Toxins
+
+Movement
+#showtooltip
+/use [mod:ctrl] Blessing of Freedom; Divine Steed
+
+Suicidal Heals
+#showtooltip [mod:ctrl] Blessing of Sacrifice; Light of the Martyr
+/use Divine Protection 
+/use [@mouseover,mod:ctrl,help][help,mod:ctrl] Blessing of Sacrifice; [@mouseover,help] Light of the Martyr
+# Cast Sequence:
+# https://us.battle.net/forums/en/wow/topic/8481408320
+# https://www.wowinterface.com/forums/showthread.php?t=46814
 
 
+Beacon
+#showtooltip
+/use [@mouseover][] Beacon of Light
 
 
 
