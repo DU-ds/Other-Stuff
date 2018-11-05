@@ -41,8 +41,8 @@ Druid:
 # maybe target should go before mouseover for druid heal macros?
 
 B-Rez
-#showtooltip Rebirth
- /cast [@mouseover, help,dead][help,dead] Rebirth
+#showtooltip
+/cast [@mouseover,help,dead][help,dead][] Rebirth
 
 Tranquility
 #showtooltip Tranquility
@@ -74,8 +74,7 @@ Wild Growth
 /cast [@target,help,nodead] [@mouseover,help,nodead][@player] Wild Growth
 
 AOE
-#showtooltip
-
+#showtooltip [mod:ctrl] Tranquility; Efflorescence
 /cast [mod:ctrl] Barkskin
 /cast [mod:ctrl] Tranquility
 /cast [@cursor] Efflorescence
@@ -119,6 +118,10 @@ Dispel
 #showtooltip
 /use [@mouseover,help,nodead] Purify; [@mouseover,harm] Dispel Magic; [@target,harm] Dispel Magic; [@target,help,nodead][@player] Purify
 # dispels either an enemy target with a buff or an ally with a debuff
+
+Holy Cooldowns
+#showtooltip
+/use [mod:altctrl] Divine Hymn; [@mouseover,help,nodead,mod:ctrl][@target,help,nodead,mod:ctrl] Guardian Spirit; Desperate Prayer
 
 Holy Words
 #showtooltip
@@ -278,17 +281,17 @@ Heal Dispel
 
 Heal Interupt
 #showtooltip
-/use [@mouseover][] Hammer of Justice
+/use [@mouseover,harm,nodead][@target,harm,nodead][] Hammer of Justice
 
 Tank Interupts
 #showtooltip
-/use [@mouseover,mod:altctrl][mod:altctrl] Repentance; [@mouseover,mod:ctrl][mod:ctrl] Hammer of Justice; [@mouseover][] Rebuke
+/use [@mouseover,harm,nodead,mod:altctrl][mod:altctrl] Repentance; [@mouseover,mod:ctrl,harm,nodead][mod:ctrl] Hammer of Justice; [@mouseover,harm,nodead][@target][] Rebuke
 
 Tank Cooldowns
 #showtooltip
-/use [mod:altctrl] Lay on Hands; [mod:ctrl] Divine Shield; [] Ardent Defender
+/use [mod:altctrl] Lay on Hands; [mod:ctrl] Divine Shield; Ardent Defender
 
-Tank Dispel
+Tank/DPS Dispel
 #showtooltip
 /use [@mouseover][@target][] Cleanse Toxins
 
@@ -308,6 +311,20 @@ Suicidal Heals
 Beacon
 #showtooltip
 /use [@mouseover][] Beacon of Light
+
+HPSpend
+#showtooltip
+/use [mod:ctrl] Divine Storm; [@mouseover,harm,nodead][@target][] Templar's Verdict
+
+HPBuild
+#showtooltip
+/use [@mouseover,harm,nodead,mod:altctrl][mod:altctrl] Judgment; [@mouseover,harm,nodead,mod:ctrl][@target,mod:ctrl] Blade of Justice; [@mouseover,harm][@target,harm][] Crusader Strike
+
+DPS Cooldowns
+#showtooltip
+/use [mod:altctrl] Lay on Hands; [mod:ctrl] Divine Shield; [] Shield of Vengeance
+
+
 
 
 
