@@ -50,8 +50,8 @@ Tranquility
 /cast Tranquility
 
 Decurse
-#showtooltip Nature's Cure
-/use [@mouseover,help,nodead][help,nodead] Nature's Cure
+#showtooltip 
+/use [@mouseover,help,nodead][help,nodead][] Nature's Cure
 
 Regrowth
 # #showtooltip Regrowth
