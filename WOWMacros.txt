@@ -213,7 +213,7 @@ Heal
 
 Shield
 #showtooltip
-/use [@mouseover,help][@target] Earth Shield
+/use [@mouseover,help][@target,help][] Earth Shield
 
 Healing Rain
 #showtooltip
@@ -225,18 +225,52 @@ Unleash Life
 
 Interupt
 #showtooltip
-/use [@cursor,mod:ctrl]  [@mouseover,harm][@target,harm][@focus,harm] Wind Shear
+/use [@cursor,mod:ctrl]  [@mouseover,harm][@target,harm][@focus,harm][] Wind Shear
 #leaving in the conditional bc it doesnt change the function and reminds me id like to find another interupt to use also.
 
 Totems
 #showtooltip
 /use [@cursor,mod:altctrl] Tremor Totem; [@cursor, mod:ctrl] Earthbind Totem; [@cursor] Capacitor Totem
 
-Dispel
+Heal Dispel
 #showtooltip
 /use [@mouseover,help,nodead][@target,help,nodead] Purify Spirit
 
+Lightning
+#showtooltip
+/use [@mouseover,harm,mod:ctrl][mod:ctrl] Chain Lightning; [@mouseover,harm][@target,harm][] Lightning Bolt
 
+Elemental CDs
+#showtooltip
+/use [mod:altctrl] Bloodlust; [mod:ctrl] Earth Elemental; Fire Elemental
+
+Flame Shock
+#showtooltip
+/use [@mouseover,harm][@target,harm][] Flame Shock 
+
+Lava Burst
+#showtooltip
+/use [@mouseover,harm][@target,harm][] Lava Burst
+
+Earth Shock
+#showtooltip
+/use [@mouseover,harm][@target,harm][] Earth Shock
+
+DPS Dispel
+#showtooltip
+/use [@mouseover,help,nodead][@target,help,nodead][] Cleanse Spirit
+
+DPS Heal
+#showtooltip
+/use [@mouseover,help][@target,help][] Healing Surge
+
+Hex
+#showtooltip
+/use [@mouseover,harm][@target,harm][] Hex
+
+Earthquake
+#showtooltip
+/use [@cursor] Earthquake
 
 DK:
 AOE
