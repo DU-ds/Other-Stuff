@@ -22,7 +22,7 @@ freeze
 #showtooltip
 /use [@cursor,pet:Water Elemental,mod:altctrl] [@self,pet:Water Elemental,mod:altctrl] Freeze; [@target,mod:ctrl][mod:ctrl] Ice Nova; Frost Nova
 
-counterspell
+
 
 # #showtooltip
 # /use [@mouseover,harm,nodead][] Counterspell
@@ -88,7 +88,18 @@ CC
 #showtooltip
 /use [@mouseover,mod:altctrl][@target,mod:altctrl] Hibernate; [@mouseover,harm,mod:ctrl][@target, mod:ctrl] Entangling Roots; [@mouseover,harm][@target,harm][] Mighty Bash
 
+Tank CC
+#showtooltip
+/use [@mouseover,mod:altctrl][@target,mod:altctrl] Hibernate; [@mouseover,harm,mod:ctrl][@target, mod:ctrl] Entangling Roots; [@mouseover,harm][@target,harm][] Incapacitating Roar
 
+
+Tank CDs
+#showtooltip
+/use [mod:altctrl] Stampeding Roar; [mod:ctrl] Survival Instincts; Barkskin
+
+Tank Interupts
+#showtooltip
+/use [@mouseover,mod:altctrl,harm][mod:altctrl] War Stomp; [@mouseover,mod:ctrl,harm][mod:ctrl] Mighty Bash; [@mouseover,harm][] Skull Bash
 
 
 
@@ -293,6 +304,12 @@ CC
 grip/interupt
 #showtooltip
 /use [@mouseover,mod:ctrl,harm][@target,harm,mod:ctrl] Death Grip; [@mouseover,harm][] Mind Freeze
+
+Unholy CDs
+#showtooltip
+/use [mod:altctrl] Icebound Fortitude; [mod:ctrl] Death Pact; Anti-Magic shell
+
+
 
 
 Paladin
