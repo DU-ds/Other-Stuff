@@ -71,7 +71,9 @@ Lifebloom
 
 Wild Growth
 #showtooltip Wild Growth
+/use 13
 /cast [@target,help,nodead] [@mouseover,help,nodead][@player] Wild Growth
+Growth
 
 AOE
 #showtooltip [mod:ctrl] Tranquility; Efflorescence
@@ -142,6 +144,8 @@ Holy Words
 /use [@focus,mod:altctrl][@target,mod:altctrl] Holy Word: Chastise; [@cursor,mod:ctrl] Holy Word: Sanctify; [@mouseover,nodead][@target,help,nodead] Holy Word: Serenity
 
 Flash Heal
+#showtooltip Flash Heal
+/use 13
 /use [@mouseover,nodead,help][@target,help,nodead][@player] Flash Heal
 
 Heal
