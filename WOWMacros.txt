@@ -146,6 +146,7 @@ Holy Words
 Flash Heal
 #showtooltip Flash Heal
 /use 13
+/use 14
 /use [@mouseover,nodead,help][@target,help,nodead][@player] Flash Heal
 
 Heal
@@ -230,9 +231,9 @@ Shield
 #showtooltip
 /use [@mouseover,help][@target,help][] Earth Shield
 
-Healing Rain
+Healing AOE
 #showtooltip
-/use [@cursor] Healing Rain
+/use [mod:ctrl] Wellspring;[@cursor] Healing Rain
 
 Unleash Life
 #showtooltip Unleash Life
@@ -273,7 +274,7 @@ Earth Shock
 
 DPS Dispel
 #showtooltip
-/use [@mouseover,help,nodead][@target,help,nodead][] Cleanse Spirit
+/use [@mouseover,harm,mod:ctrl][@target,harm,mod:ctrl][mod:ctrl] Purge;[@mouseover,help,nodead][@target,help,nodead][] Cleanse Spirit
 
 DPS Heal
 #showtooltip
@@ -286,6 +287,7 @@ Hex
 Earthquake
 #showtooltip
 /use [@cursor] Earthquake
+
 
 DK:
 AOE
@@ -314,7 +316,9 @@ Unholy CDs
 /use [mod:altctrl] Icebound Fortitude; [mod:ctrl] Death Pact; Anti-Magic shell
 
 
-
+Plague
+#showtooltip
+/use [@mouseover, mod:ctrl,harm][@target,harm, mod:ctrl] Epidemic; [@mouseover,harm][@target,harm][] Outbreak
 
 Paladin
 
