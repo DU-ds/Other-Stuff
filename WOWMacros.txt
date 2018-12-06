@@ -385,6 +385,64 @@ DPS Cooldowns
 
 
 
+Monk
+
+Enveloping mist
+#showtooltip Enveloping Mist
+/use Thunder Focus Tea
+/use [@mouseover,help][@target,help][] Enveloping mist
+
+Renewing Mist
+#showtooltip Renewing Mist
+/use Thunder Focus Tea
+/use [@mouseover,help][@target,help][] Renewing Mist
+
+Vivify
+#showtooltip Vivify
+/use Thunder Focus Tea
+/use [@mouseover,help][@target,help][] Vivify
+
+Soothing Mist
+#showtooltip
+/use [@mouseover,help][@target,help][] Soothing Mist
+
+Life Cocoon
+#showtooltip
+/use [@mouseover,help][@target,help][] Life Cocoon
+
+Movement
+#showtooltip
+/use [@mouseover,mod:ctrl,help][@target,mod:ctrl,help][mod:ctrl] Tiger's Lust; [] Roll
+
+Heal CDs
+#showtooltip
+/use [mod:ctrl] Fortifying Brew; Damper Harm 
+
+Heal CC
+#showtooltip
+/use [mod:ctrl] Leg Sweep;[@cursor] Ring of Peace
+
+Paralysis
+#showtooltip
+/use [@mouseover,harm][@target,harm][] Paralysis
+
+Transcendence
+#showtooltip
+/castsequence Transcendence, Transcendence: Transfer
+
+Dispel
+#showtooltip
+/use [mod:ctrl] Revival; [@mouseover,help][@target,help][] Detox
+
+Summon Jade Serpent Statue
+#showtooltip
+/use [@cursor] Summon Jade Serpent Statue
+
+
+
+
+
+
 
 
 
