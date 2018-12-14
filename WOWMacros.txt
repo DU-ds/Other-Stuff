@@ -51,7 +51,7 @@ Tranquility
 
 Decurse
 #showtooltip 
-/use [@mouseover,help,nodead][help,nodead][] Nature's Cure
+/use [@mouseover,spec:2][@target,spec:2] Remove Corruption;[@mouseover,help,nodead][help,nodead][] Nature's Cure
 
 Regrowth
 # #showtooltip Regrowth
@@ -90,21 +90,38 @@ CC
 #showtooltip
 /use [@mouseover,mod:altctrl][@target,mod:altctrl] Hibernate; [@mouseover,harm,mod:ctrl][@target, mod:ctrl] Entangling Roots; [@mouseover,harm][@target,harm][] Mighty Bash
 
-Tank CC
+All CC
 #showtooltip
-/use [@mouseover,mod:altctrl][@target,mod:altctrl] Hibernate; [@mouseover,harm,mod:ctrl][@target, mod:ctrl] Entangling Roots; [@mouseover,harm][@target,harm][] Incapacitating Roar
+/use [@mouseover,harm,mod:altctrl][@target,mod:altctrl] Hibernate;[@mouseover,harm,mod:ctrl][@target,mod:ctrl] Entangling Roots;[@mouseover,harm,spec:3][@target,spec:3] Incapacitating Roar;[@mouseover,harm][@target] Mighty Bash
 
 
-Tank CDs
+Mele CDs
 #showtooltip
-/use [mod:altctrl] Stampeding Roar; [mod:ctrl] Survival Instincts; Barkskin
+/use [mod:altctrl,spec:2] Berserk; [mod:ctrl,spec:2] Survival Instincts; [spec:2] Tiger's Fury; [mod:altctrl] Stampeding Roar; [mod:ctrl] Survival Instincts; Barkskin
 
-Tank Interupts
+Mele Interupts
 #showtooltip
 /use [@mouseover,mod:altctrl,harm][mod:altctrl] War Stomp; [@mouseover,mod:ctrl,harm][mod:ctrl] Mighty Bash; [@mouseover,harm][] Skull Bash
 
+Feral DOT
+#showtooltip
+/use [@mouseover,harm,mod:ctrlalt][@target,harm,mod:ctrlalt][mod:ctrlalt] Moonfire;[@mouseover,harm,mod:ctrl][@target,harm,mod:ctrl][mod:ctrl] Rip;[mouseover,harm][@target,harm][] Rake
 
+Feral AOE
+#showtooltip
+/use [@mouseover,harm,mod:ctrl][@target,harm,mod:ctrl][mod:ctrl] Thrash;[mouseover,harm][@target,harm][] Brutal Slash
 
+Feral Direct
+#showtooltip
+/use [@mouseover,harm,mod:ctrl][@target,harm,mod:ctrl][mod:ctrl] Ferocious Bite;[mouseover,harm][@target,harm][] Shred
+
+Feral Interupt
+#showtooltip
+/use [@mouseover,harm,mod:ctrlalt][@target,harm,mod:ctrlalt][mod:ctrlalt] War Stomp;[@mouseover,harm,mod:ctrl][@target,harm,mod:ctrl][mod:ctrl] Maim;[mouseover,harm][@target,harm][] Skull Bash 
+
+Feral Movement
+#showtooltip
+/use [mod:ctrlalt] Stampeding Roar; [mod:ctrl] Dash; Wild Charge
 
 
 Priest:
@@ -332,7 +349,7 @@ Heal
 
 R1Talents
 #showtooltip
-/use [@mouseover,talent:1/2][help,talent:1/2] Bestow Faith; [@mouseover,talent:1/3][help,talent:1/3] Light's Hammer
+/use [@mouseover,help,talent:1/2][talent:1/2] Bestow Faith; [@cursor,talent:1/3] Light's Hammer
 
 Heal Dispel
 #showtooltip
