@@ -88,9 +88,12 @@ Tough Skin
 
 CC
 #showtooltip
-/use [@mouseover,mod:altctrl][@target,mod:altctrl] Hibernate; [@mouseover,harm,mod:ctrl][@target, mod:ctrl] Entangling Roots; [@mouseover,harm][@target,harm][] Mighty Bash
+/use [@mouseover,mod:altctrl][@target,mod:altctrl] Hibernate; [@mouseover,harm,mod:ctrl][@target, mod:ctrl] Entangling Roots; [@mouseover,harm,talent:4/1][@target,talent:4/1] Mighty Bash; [talent:4/3] Typhoon
 
 All CC
+#showtooltip
+/use [@mouseover,mod:altctrl][@target,mod:altctrl] Hibernate; [@mouseover,harm,mod:ctrl][@target, mod:ctrl] Entangling Roots;[@mouseover,harm,talent:4/1][talent:4/1]Mighty Bash;[talent:4/3]Typhoon
+
 #showtooltip
 /use [@mouseover,harm,mod:altctrl][@target,mod:altctrl] Hibernate;[@mouseover,harm,mod:ctrl][@target,mod:ctrl] Entangling Roots;[@mouseover,harm,spec:3][@target,spec:3] Incapacitating Roar;[@mouseover,harm][@target] Mighty Bash
 
@@ -113,7 +116,7 @@ Feral AOE
 
 Feral Direct
 #showtooltip
-/use [@mouseover,harm,mod:ctrl][@target,harm,mod:ctrl][mod:ctrl] Ferocious Bite;[mouseover,harm][@target,harm][] Shred
+/use [@mouseover,harm,mod:ctrlalt][@target,harm,mod:ctrlalt][mod:ctrlalt] Maim;[@mouseover,harm,mod:ctrl][@target,harm,mod:ctrl][mod:ctrl] Ferocious Bite;[mouseover,harm][@target,harm][] Shred
 
 Feral Interupt
 #showtooltip
@@ -151,7 +154,7 @@ Dispel
 
 Holy Cooldowns
 #showtooltip
-/use [mod:altctrl] Divine Hymn; [@mouseover,help,nodead,mod:ctrl][@target,help,nodead,mod:ctrl] Guardian Spirit; Desperate Prayer
+/castsequence [mod:altctrl] Divine Hymn; [@mouseover,help,nodead,mod:ctrl][@target,mod:ctrl] Guardian Spirit; Desperate Prayer, Fade
 
 Holy Words
 #showtooltip
@@ -457,8 +460,28 @@ Summon Jade Serpent Statue
 
 
 
+Demon Hunter
 
 
+AOE
+#showtooltip
+/use [@cursor,mod:ctrl] Sigil of Flame; Immolation Aura	 
+
+Interupt
+#showtooltip
+/use [@cursor,mod:ctrl] Sigil of Silence; [@mouseover,harm][@target] Disrupt 
+
+CC
+#showtooltip
+/use [@cursor,mod:ctrl] Sigil of Misery; [@mouseover,harm][@target] Imprison 
+
+Fiery Brand
+#showtooltip
+/use [@mouseover,harm][@target] Fiery Brand
+
+Infernal Strike
+#showtooltip
+/use [@cursor] Infernal Strike
 
 
 
