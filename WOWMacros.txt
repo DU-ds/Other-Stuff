@@ -51,13 +51,14 @@ Tranquility
 
 Decurse
 #showtooltip 
-/use [@mouseover,spec:2][@target,spec:2] Remove Corruption;[@mouseover,help,nodead][help,nodead][] Nature's Cure
+/use [@mouseover,spec:2/3[@target,spec:2/3] Remove Corruption;[@mouseover,help,nodead][help,nodead][] Nature's Cure
 
 Regrowth
 # #showtooltip Regrowth
 # /cast [@mouseover,help,nodead][@target,help,nodead][@player] Regrowth
 
 #showtooltip Regrowth
+/use 14
 /use [@target,help,nodead][@mouseover,help,nodead] [@player] Regrowth
 
 
@@ -110,9 +111,9 @@ Feral DOT
 #showtooltip
 /use [@mouseover,harm,mod:ctrlalt][@target,harm,mod:ctrlalt][mod:ctrlalt] Moonfire;[@mouseover,harm,mod:ctrl][@target,harm,mod:ctrl][mod:ctrl] Rip;[mouseover,harm][@target,harm][] Rake
 
-Feral AOE
+Mele AOE
 #showtooltip
-/use [@mouseover,harm,mod:ctrl][@target,harm,mod:ctrl][mod:ctrl] Thrash;[mouseover,harm][@target,harm][] Brutal Slash
+/use [mod:ctrl] Thrash;[spec:2] Brutal Slash;[spec:3] Swipe
 
 Feral Direct
 #showtooltip
@@ -124,7 +125,11 @@ Feral Interupt
 
 Feral Movement
 #showtooltip
-/use [mod:ctrlalt] Stampeding Roar; [mod:ctrl] Dash; Wild Charge
+/use [mod:ctrlalt] Stampeding Roar; [mod:ctrl] Dash; [@mouseover][@target]Wild Charge
+
+Tank AOE
+#showtooltip
+/use [mod:ctrl] Thrash
 
 
 Priest:
