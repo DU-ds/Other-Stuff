@@ -100,8 +100,10 @@ All CC
 
 
 Mele CDs
-#showtooltip
-/use [mod:altctrl,spec:2] Berserk; [mod:ctrl,spec:2] Survival Instincts; [spec:2] Tiger's Fury; [mod:altctrl] Stampeding Roar; [mod:ctrl] Survival Instincts; Barkskin
+#showtooltip [mod:altctrl,spec:2]Berserk;[mod:ctrl,spec:2]Survival Instincts;[spec:2]Tiger's Fury;[mod:altctrl]Stampeding Roar;[mod:ctrl]Survival Instincts;Barkskin
+/use 13
+/use 14
+/use [mod:altctrl,spec:2]Berserk;[mod:ctrl,spec:2]Survival Instincts;[spec:2]Tiger's Fury;[mod:altctrl]Stampeding Roar;[mod:ctrl]Survival Instincts;Barkskin
 
 Mele Interupts
 #showtooltip
@@ -113,7 +115,7 @@ Feral DOT
 
 Mele AOE
 #showtooltip
-/use [mod:ctrl] Thrash;[spec:2] Brutal Slash;[spec:3] Swipe
+/use [mod:ctrlalt,spec:3,talent:6/3] Primal Wrath;[mod:ctrl] Thrash;[spec:2] Swipe
 
 Feral Direct
 #showtooltip
@@ -345,7 +347,9 @@ Unholy CDs
 
 
 Plague
-#showtooltip
+#showtooltip [mod:ctrl] Epidemic; Outbreak
+/use 13
+/use 14
 /use [@mouseover, mod:ctrl,harm][@target,harm, mod:ctrl] Epidemic; [@mouseover,harm][@target,harm][] Outbreak
 
 Paladin
@@ -448,7 +452,7 @@ Heal CDs
 
 Heal CC
 #showtooltip
-/use [mod:ctrl] Leg Sweep;[@cursor] Ring of Peace
+/use [mod:ctrlalt]Paralysis;[mod:ctrl] Leg Sweep;[@cursor] Ring of Peace
 
 Paralysis
 #showtooltip
@@ -466,6 +470,31 @@ Summon Jade Serpent Statue
 #showtooltip
 /use [@cursor] Summon Jade Serpent Statue
 
+Tank AOE
+#showtooltip
+/use [@cursor,harm,mod:ctrl][@target,mod:ctrl] Breath of Fire;[@cursor,harm][@target] Keg Smash
+
+Mitigation
+#showtooltip
+/use [mod:ctrlalt] Gaurd;[mod:ctrl] Purifying Brew; Ironskin Brew
+
+Tank CDs
+#showtooltip
+/use [mod:ctrlalt] Fortifying Brew;[mod:ctrl] Zen Meditation;Dampen Harm
+
+Interupt
+#showtooltip
+/use [mod:ctrl] Quaking Palm; Spear Hand Strike
+
+Chi Builders
+#showtooltip
+/use [mod:ctrl] Fist of the White Tiger; Tiger Palm
+
+DPS AOE
+#showtooltip
+/use [mod:ctrlalt]Whirling Dragon Punch;[mod:ctrl]Spinning Crane Kick;Fists of Fury
+
+
 
 
 Demon Hunter
@@ -474,10 +503,14 @@ Demon Hunter
 AOE
 #showtooltip
 /use [@cursor,mod:ctrl] Sigil of Flame; Immolation Aura	 
+/use 13
+/use 14
 
 Interupt
 #showtooltip
 /use [@cursor,mod:ctrl] Sigil of Silence; [@mouseover,harm][@target] Disrupt 
+/use 13
+/use 14
 
 CC
 #showtooltip
