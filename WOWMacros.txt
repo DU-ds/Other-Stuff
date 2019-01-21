@@ -11,6 +11,31 @@ coordPrint
 
 Mage:
 
+Frost AOE
+#showtooltip
+/use [@cursor,mod:ctrlalt] Blizzard;[mod:ctrl]Frozen Orb;Cone of Cold
+
+Frost Single
+#showtooltip
+/use [@mouseover,harm,mod:ctrl][@target,mod:ctrl] Flurry;[@mouseover,harm][@target]Frostbolt
+
+Frost Special
+#showtooltip
+/use [@mouseover,harm,mod:ctrl][@target,mod:ctrl] Ebonbolt;[@mouseover,harm][@target]Glacial Spike
+
+Frost CDs
+#showtooltip
+/use [mod:ctrlalt]Icy Veins;[mod:ctrl]Cold Snap;Ice Block
+
+CC
+#showtooltip
+/use [@mouseover,harm][@target] Polymorph
+
+Interupt
+#showtooltip
+/use [@mouseover,harm,mod:ctrl][@target,mod:ctrl]Spellsteal;[@target][@mouseover]Counterspell
+
+
 food
 
 #showtooltip
@@ -267,6 +292,8 @@ Healing AOE
 
 Unleash Life
 #showtooltip Unleash Life
+/use 13
+/use 14
 /use [@mouseover,help,nodead][@target,help,nodead] Unleash Life
 
 Interupt
@@ -280,7 +307,11 @@ Totems
 
 Heal Dispel
 #showtooltip
-/use [@mouseover,help,nodead][@target,help,nodead] Purify Spirit
+/use [@mouseover,help,nodead][@target] Purify Spirit
+
+Heal Totems
+#showtooltip
+/use [mod:ctrlalt] ;[mod:ctrl]Spirit Link Totem; Healing Stream Totem
 
 Lightning
 #showtooltip
@@ -302,9 +333,9 @@ Earth Shock
 #showtooltip
 /use [@mouseover,harm][@target,harm][] Earth Shock
 
-DPS Dispel
+Dispel
 #showtooltip
-/use [@mouseover,harm,mod:ctrl][@target,harm,mod:ctrl][mod:ctrl] Purge;[@mouseover,help,nodead][@target,help,nodead][] Cleanse Spirit
+/use [@mouseover,harm,mod:ctrl][@target,mod:ctrl] Purge;[@mouseover,help,nodead,spec:3][@target,spec:3] Purify Spirit;[@mouseover,help,nodead][@target][] Cleanse Spirit
 
 DPS Heal
 #showtooltip
