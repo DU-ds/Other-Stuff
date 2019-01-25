@@ -62,6 +62,25 @@ freeze
 /s counterspelled %t
 /targetlasttarget
 
+
+Fire:
+
+Fire AOE
+#showtooltip
+/use [@cursor,mod:ctrlalt] Meteor;[mod:ctrl]Dragon's Breath;[@cursor]Flamestrike
+
+Fire Talents
+#showtooltip
+/use [@cursor,mod:ctrl] Meteor;[@mouseover,harm][@target]Living Bomb
+
+Fire Single Tar
+#showtooltip
+/use [@mouseover,mod:ctrl,harm][@target,mod:ctrl] Pyroblast;[@mouseover,harm][@target]fireball
+
+
+
+
+
 Druid:
 # maybe target should go before mouseover for druid heal macros?
 
@@ -320,6 +339,8 @@ Lightning
 Elemental CDs
 #showtooltip
 /use [mod:altctrl] Bloodlust; [mod:ctrl] Earth Elemental; Fire Elemental
+/use 13
+/use 14
 
 Flame Shock
 #showtooltip
