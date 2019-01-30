@@ -117,8 +117,10 @@ Lifebloom
 Wild Growth
 #showtooltip Wild Growth
 /use 13
+/use 14
 /cast [@target,help,nodead] [@mouseover,help,nodead][@player] Wild Growth
-Growth
+/use [@cursor] 13
+/use [@cursor] 14
 
 AOE
 #showtooltip [mod:ctrl] Tranquility; Efflorescence
