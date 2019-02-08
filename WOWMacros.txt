@@ -220,7 +220,7 @@ Flash Heal
 #showtooltip Flash Heal
 /use 13
 /use 14
-/use [@mouseover,nodead,help][@target,help,nodead][@player] Flash Heal
+/use [@mouseover,help][@target,help][@player] Flash Heal
 
 Heal
 #showtooltip
@@ -244,7 +244,7 @@ Prayer of Healin
 
 Shield
 #showtooltip
-/use [@mouseover,help][@target,help][] Power Word: Shield
+/use [@mouseover,help][@target,help][@player] Power Word: Shield
 
 Penance
 #showtooltip
@@ -309,7 +309,7 @@ Shield
 
 Healing AOE
 #showtooltip
-/use [mod:ctrl] Wellspring;[@cursor] Healing Rain
+/use [mod:ctrlalt] Wellspring;[@cursor,mod:ctrl]Downpour;[@cursor] Healing Rain
 
 Unleash Life
 #showtooltip Unleash Life
