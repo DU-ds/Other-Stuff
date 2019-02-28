@@ -102,8 +102,11 @@ Regrowth
 # /cast [@mouseover,help,nodead][@target,help,nodead][@player] Regrowth
 
 #showtooltip Regrowth
+/use 13
 /use 14
-/use [@target,help,nodead][@mouseover,help,nodead] [@player] Regrowth
+/use [@cursor][@mouseover] 13
+/use [@cursor][@mouseover] 14
+/use [@mouseover,help,nodead][@target]  Regrowth
 
 
 Rejuv
@@ -116,11 +119,10 @@ Lifebloom
 
 Wild Growth
 #showtooltip Wild Growth
-/use 13
-/use 14
+
 /cast [@target,help,nodead] [@mouseover,help,nodead][@player] Wild Growth
-/use [@cursor] 13
-/use [@cursor] 14
+
+/use 14
 
 AOE
 #showtooltip [mod:ctrl] Tranquility; Efflorescence
@@ -173,7 +175,8 @@ Feral Interupt
 
 Feral Movement
 #showtooltip
-/use [mod:ctrlalt] Stampeding Roar; [mod:ctrl] Dash; [@mouseover][@target]Wild Charge
+/use [mod:ctrlalt] Stampeding Roar; [mod:ctrl] Dash; [@mouseover,form:0][@target]Wild Charge
+// @mouseover,form:0][
 
 Tank AOE
 #showtooltip
