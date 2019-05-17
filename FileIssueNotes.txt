@@ -1,0 +1,32 @@
+
+# repo acting odd:
+https://github.com/DU-ds/MiscRScripts
+
+
+# file acting oddest
+https://github.com/DU-ds/MiscRScripts/blob/master/probabilityTheory:AConciseCourseProblemSets.r
+
+# Note: keeps making file probabilityTheory. I deleted it from original repo and it came back. Then I cloned in another place and it showed up. But it's not on my github.
+# naming issue?
+
+# in file names, colons are invalid on windows but not linux. Rip. XD
+
+
+https://stackoverflow.com/questions/10386344/how-to-get-a-file-in-windows-with-a-colon-in-the-filename
+https://github.com/aws/aws-cli/issues/1154
+
+https://stackoverflow.com/questions/41148490/cannot-clone-a-git-repository-from-github
+https://stackoverflow.com/questions/5991805/how-do-i-clone-files-with-colons-in-the-filename
+
+
+# Some stuff I found b4 realizing the name issue:
+
+https://stackoverflow.com/questions/9305326/why-doesnt-git-pull-bring-back-directories-that-ive-deleted
+https://stackoverflow.com/questions/6839398/find-when-a-file-was-deleted-in-git
+https://www.vogella.com/tutorials/Git/article.html#retrievefiles_finddeletedfile
+https://stackoverflow.com/questions/11198542/restore-deleted-file-from-repository
+https://stackoverflow.com/questions/2466735/how-to-sparsely-checkout-only-one-single-file-from-a-git-repository
+
+# should've realized something was up when wget and curl > foo failed XD
+https://stackoverflow.com/a/31844340/
+
